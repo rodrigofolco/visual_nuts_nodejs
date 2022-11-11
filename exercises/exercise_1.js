@@ -27,5 +27,7 @@ function count(max = 100) {
     new Array(max).fill(null).map((element, index) => applyCountRules(index + 1));
 }
 
-module.exports = { count };
+(() => {
+    count();
+})();
 
