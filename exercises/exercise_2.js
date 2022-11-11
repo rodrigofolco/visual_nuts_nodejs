@@ -46,8 +46,16 @@ function countAllLanguages() {
 }
 
 function findMostCommonLanguage()  {
-    
+    const languages = [];
+    countries.map(country => languages.push(...country.languages));
+    const languagesCount = languages.reduce( (acc, val) => {
+        acc[val] = (acc[val] || 0 ) + 1
+        return acc
+     },{})
+
+     return Object.keys(languagesCount).reduce((a, b) => languagesCount[a] > languagesCount[b] ? a : b);
 }
+    
 
 
 (() => {
@@ -55,5 +63,5 @@ function findMostCommonLanguage()  {
     findCountryWithMostOfficialLanguages('de'); // finds the country with the most official languages, where they officially speak German (de)
     countAllLanguages(); // that counts all the official languages spoken in the listed countries.
     findCountryWithMostOfficialLanguages(); // to find the country with the highest number of official languages.
-    // to find the most common official language(s), of all countries.
+    findMostCommonLanguage();// to find the most common official language(s), of all countries.
 })();
