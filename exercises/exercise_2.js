@@ -45,6 +45,10 @@ function countAllLanguages() {
     return [...new Set(languages)].length;
 }
 
+function findMostCommonLanguage()  {
+    
+}
+
 
 (() => {
     countContries(); // returns the number of countries in the world

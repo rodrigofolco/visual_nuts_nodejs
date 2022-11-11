@@ -1,3 +1,7 @@
+## How to run
+
+The project was divided into files by exercise, within each file there is an anonymous function that executes all the algorithms requested in the exercises.
+
 # General notes: 
 
 For all exercises we expect actual runnable Javascript code and test to be
