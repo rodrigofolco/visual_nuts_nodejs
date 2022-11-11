@@ -1,0 +1,27 @@
+{
+  "name": "visual_nuts_nodejs",
+  "version": "1.0.0",
+  "description": "visual nuts nodejs test",
+  "main": "index.js",
+  "engines": {
+    "node": "18.12.1"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigofolco/visual_nuts_nodejs.git"
+  },
+  "keywords": [
+    "visual",
+    "nuts",
+    "nodejs"
+  ],
+  "author": "Rodrigo Folco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigofolco/visual_nuts_nodejs/issues"
+  },
+  "homepage": "https://github.com/rodrigofolco/visual_nuts_nodejs#readme"
+}
